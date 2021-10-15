@@ -37,3 +37,39 @@
     transform: translateY(0px);
   }
 }
+
+h1 {
+  margin-left: 10px;
+}
+
+h1 a {
+  color: black;
+  text-decoration: none;
+  border-bottom: solid 3px black;
+}
+
+.pokemon-list {
+  margin: 0 15px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.pokemon-card {
+  width: 25%;
+  margin-top: 20px;
+  padding: 20px;
+  border-radius: 20px;
+}
+
+.pokemon-card-img img{
+  display: block;
+  margin: 0 auto;
+  width: 250px;
+}
+
+.pokemon-card-name, .pokemon-card-type {
+  color: #FFFFFF;
+  font-size: 1.2rem;
+  margin-top: 0;
+}

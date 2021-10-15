@@ -1,10 +1,15 @@
 import { pokemonReducer } from "./pokemonReducer";
 import thunkMiddleware from "redux-thunk";
 import { applyMiddleware, createStore } from "redux";
-const composedEnhancer = applyMiddleware(thunkMiddleware);
+import { composeWithDevTools } from "redux-devtools-extension";
 
-export const store = createStore(pokemonReducer, composedEnhancer);
+const composedEnhancer = composeWithDevTools(applyMiddleware(thunkMiddleware));
+
+export const store = createStore(
+  pokemonReducer,
+  applyMiddleware(thunkMiddleware)
+);
 
 store.subscribe(() => {
-  console.log(store.getState);
+  console.log(store.getState());
 });

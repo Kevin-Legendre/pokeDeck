@@ -5,6 +5,9 @@ import App from "./App";
 import { store } from "./store";
 import { Provider } from "react-redux";
 import * as serviceWorker from "./serviceWorker";
+import { fetchPokemon } from "./pokemonReducer";
+
+store.dispatch(fetchPokemon);
 
 ReactDOM.render(
   <React.StrictMode>

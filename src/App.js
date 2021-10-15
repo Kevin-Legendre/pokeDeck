@@ -13,7 +13,9 @@ function App() {
   return (
     <Router>
       <div className="container">
-        <h1><a href="/">PokeDeck</a></h1>
+        <h1>
+          <a href="/">PokeDeck</a>
+        </h1>
         <Switch>
           {ROUTES.map((item, i) => {
             if (item.component === Home) {
@@ -34,12 +36,5 @@ function App() {
       </div>
     </Router>
   );
-
-// import logo from './logo.svg';
-import "./App.css";
-
-function App() {
-  return <div></div>;
 }
-
 export default App;
